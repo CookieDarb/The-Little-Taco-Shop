@@ -1,0 +1,59 @@
+/* ||RESET */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* ||VARIABLES */
+:root{
+    /* COLORS */
+    --BG-COLOR:#080708;
+    --PRIM-COLOR:#FDCA40;
+    --SEC-COLOR:#DF2935;
+}
+
+/* ||DESIGN */
+body{
+    background-color:var(--BG-COLOR);
+    background-image: url(img/wp.png);
+    background-position: center;
+    background-size: cover;
+    color:var(--PRIM-COLOR);
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+main{
+    width:100vw;
+    height:100vh;
+    background-color: transparent;
+    backdrop-filter: blur(12.5px);
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+ h1{
+    padding:2rem;
+    font-size: 10rem;
+ }
+
+button{
+    clear:both;
+    font-size: 1.5rem;
+    padding:1rem;
+    background-color: var(--BG-COLOR);
+    color:var(--BG-COLOR);
+    border:1px solid var(--BG-COLOR);
+    border-radius: 40px;
+    font-weight:200;
+}
+
+button a:any-link{
+    color:var(--PRIM-COLOR);
+    text-decoration: none;
+}
