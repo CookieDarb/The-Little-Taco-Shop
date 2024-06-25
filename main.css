@@ -17,8 +17,8 @@
 body{
     background-color:var(--BG-COLOR);
     background-image: url(img/wp.png);
-    background-position: center;
     background-size: cover;
+    background-position:top left;
     color:var(--PRIM-COLOR);
     display:flex;
     flex-flow: column wrap;
@@ -39,7 +39,9 @@ main{
 }
  h1{
     padding:2rem;
-    font-size: 10rem;
+    font-size: 5rem;
+    text-align: center;
+    width:min(320px,100vw);
  }
 
 button{
@@ -56,4 +58,27 @@ button{
 button a:any-link{
     color:var(--PRIM-COLOR);
     text-decoration: none;
+}
+
+@media screen and (min-width:576px){
+    h1{
+        font-size:8rem;
+        width:min(500px,100vw);
+    }
+}
+
+@media screen and (min-width:768px){
+    h1{
+        white-space:nowrap;
+        font-size: 5rem;
+        width:100vw;
+    }
+}
+
+@media screen and (min-width:1200px){
+   h1{
+    font-size: 7rem;
+    white-space:nowrap;
+    width:100vw;
+   }
 }
