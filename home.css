@@ -16,12 +16,18 @@
     /* IMG SLIDER WIDTH */
     --IMG-WIDTH:clamp(320px,100%,1400px);
 }
+#TLTS{
+    white-space: nowrap;
+}
 
 body{
     background-color: var(--BG-COLOR);
     color:var(--PRIM-COLOR);
     background-image: url('img/wp.png');
     background-size: cover;
+    display:grid;
+    grid-template-rows: 100vh 300px 300px 600px;
+    position:relative;
 }
 
 header{
@@ -30,10 +36,11 @@ header{
     width:100%;
     justify-content: space-between;
     font-size: 0.75rem;
-    background-color: transparent;
+    background-color:var(--BG-COLOR);
     backdrop-filter: blur(100px);
-    height:30px;
+    height:50px;
     align-items: center;
+    z-index: 100;
 }
 
 header nav{
@@ -57,70 +64,44 @@ nav a:any-link{
 }
 
 main{
-    display:grid;
-    grid-template-rows: 200px 300px 300px 600px;
-    position:relative;
+    
 }
 
 .welcome{
     width:var(--IMG-WIDTH);
-    /* position:relative; */
     position:absolute;
     top:0;
     left:0;
 }
 
 .welcome .bg{
-    display:flex;
-}
-
-.welcome img{
-    width:var(--IMG-WIDTH);
-    height:200px;
+    background-image: url('img/wp.png');
+    background-position: center center;
+    background-size: cover;
     animation-name:swap-slide;
     animation-duration: 60s;
     animation-iteration-count: infinite;
+    width:var(--IMG-WIDTH);
+    height:100vh;
 }
+
+
 
 @keyframes swap-slide{
     0%{
-        transform: translateX(0);
-    }
-    10%{
-        transform: translateX(0%);
-    }
-    15%{
-        transform: translateX(-100%);
+        background-image: url('img/wp.png');
     }
     25%{
-        transform: translateX(-100%);
+        background-image: url('img/wp2.png');
     }
-    30%{
-        transform: translateX(-200%);
-    }
-    40%{
-        transform: translateX(-200%);
-    }
-    45%{
-        transform: translateX(-300%);
-    }
-    55%{
-        transform: translateX(-300%);
-    }
-    60%{
-        transform: translateX(-200%);
-    }
-    70%{
-        transform: translateX(-200%);
+    50%{
+        background-image:url('img/wp3.png');
     }
     75%{
-        transform: translateX(-100%);
-    }
-    85%{
-        transform: translateX(-100%);
+        background-image: url('img/French-Fries.jpg');
     }
     100%{
-        transform: translateX(0%);
+        background-image: url('img/French-Fries.jpg');
     }
 }
 
@@ -128,17 +109,36 @@ main{
     z-index:5;
     background-color: rgb(8, 7, 8,0.5);
     backdrop-filter: blur(0.5px);
-    height:200px;
+    height:100vh;
     width:var(--IMG-WIDTH);
     display:flex;
     flex-flow:column wrap;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     text-shadow: 10px 10px 10px black;
 }
 
-.fg h1{
+.head h1{
     color:var(--TER-COLOR);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.head p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.fg p#button{
+    border:2px solid var(--TER-COLOR);
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.fg p#button a:any-link{
+    color:var(--TER-COLOR);
+    text-decoration: none;
 }
 
 .menu-tables{
