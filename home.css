@@ -154,6 +154,7 @@ nav a:any-link{
     background-color: var(--BG-COLOR);
     font-size: 1rem;
     text-align : center;
+    scroll-margin-top:3rem;
 }
 .menu h2{
     font-size: 2.5rem;
