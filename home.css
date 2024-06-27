@@ -17,6 +17,7 @@
     --VEG-COLOR:#0C8346;
     --NVEG-COLOR:#C1292E;
     --SPICY-COLOR:#FF6B6B;
+    --BVG-COLOR:#58FCEC;
 
     /* IMG SLIDER WIDTH */
     --IMG-WIDTH:clamp(320px,100%,1400px);
@@ -157,11 +158,16 @@ nav a:any-link{
     scroll-margin-top:3rem;
 }
 .menu h2{
+    font-family: "Cormorant Garamond", serif;
+    text-decoration-thickness:1px;
     font-size: 2.5rem;
     text-align: center;
     color:var(--TER-COLOR);
-    padding:1rem;
+    margin:1rem;
+    margin-top: 0;
+    padding-top: 1rem;
     font-weight: lighter;
+    border-bottom: 2px solid var(--TER-COLOR);
 }
 
 .menu-section{
@@ -225,6 +231,17 @@ nav a:any-link{
 .spicy{
     color:var(--SPICY-COLOR);
 }
+
+.bvg{
+    color:var(--BVG-COLOR);
+}
+
+.sides .menu-section-content{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
 #veg{
     grid-row-start:3;
 }
