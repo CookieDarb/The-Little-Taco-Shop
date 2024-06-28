@@ -165,7 +165,7 @@ nav a:any-link{
     background-image: url('img/5-dots.webp');
     padding-bottom:2rem;
 }
-:is(.menu,.features,.ratings) h2{
+:is(.menu,.features,.ratings,.contact) h2{
     font-family: "Cormorant Garamond", serif;
     text-decoration-thickness:1px;
     font-size: 2.5rem;
@@ -322,7 +322,7 @@ nav a:any-link{
     padding:1rem;
     animation-name: slide-reviews;
     animation-duration:60s;
-    animation-delay:5s;
+    animation-delay:1.5s;
     animation-iteration-count: infinite;
 }
 
@@ -365,3 +365,49 @@ nav a:any-link{
         transform: translateX(-400vw);
     }
 }
+
+.contact{
+    background-image: url('img/double-bubble-dark.webp');
+}
+
+.contact .content{
+    background-color: var(--BG-COLOR);
+    margin:10px;
+    text-align: center;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: space-between;
+}
+
+.contact .topic{
+    font-size: 1.75rem;
+    color:var(--TER-COLOR);
+}
+
+.contact .content div{
+    margin:1rem;
+}
+
+.contact .content .extra{
+    font-size: 1.25rem;
+    color:var(--PRIM-COLOR);
+    font-weight: lighter;
+    margin-top: 1rem;
+}
+
+.contact a:any-link{
+    color:var(--PRIM-COLOR);
+    text-decoration:none;
+    font-size: inherit;
+}
+
+.contact #img-links{
+    margin-left: 2.5rem;
+}
+
+.contact address{
+    font-style:normal;
+    font-size: 1.25rem;
+    font-weight: lighter;
+}
+
