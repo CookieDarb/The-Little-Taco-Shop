@@ -22,7 +22,7 @@
 
 
     /* IMG SLIDER WIDTH */
-    --IMG-WIDTH:clamp(320px,100%,1400px);
+    --IMG-WIDTH:max(320px,100vw);
     --FULL-WIDTH:100vw;
     --CARD-WIDTH:300px;
 }
@@ -43,6 +43,7 @@ body{
     display:grid;
     grid-template-rows: 100vh 1fr;
     position:relative;
+    width:100vw;
 }
 
 main{
@@ -73,7 +74,7 @@ header nav{
 header ul{
     list-style-type: none;
     display:flex;
-    flex-flow:column nowrap;
+    flex-flow:row nowrap;
     justify-content: space-around;
     align-items:center;
     height:100%;
@@ -165,7 +166,6 @@ nav a:any-link{
     background-color: var(--BG-COLOR-2);
     font-size: 1rem;
     text-align : center;
-    scroll-margin-top:3rem;
     background-image: url('img/5-dots.webp');
     padding-bottom:2rem;
 }
@@ -259,11 +259,14 @@ nav a:any-link{
 .features{
     background-color: hsl(260, 4%, 16%);
     background-image: url('img/double-bubble-dark.webp');
+    grid-row-start:2;
+}
+
+.features .card-collection{
     display:flex;
     flex-flow:column nowrap;
     justify-content: space-between;
     align-items: center;
-    grid-row-start:2;
 }
 
 .features .card{
@@ -311,6 +314,7 @@ nav a:any-link{
     width:100px;
 }
 .ratings .card{
+    padding:1rem;
     background-color: var(--BG-COLOR);
     color:var(--PRIM-COLOR);
     width:var(--CARD-WIDTH);
@@ -323,7 +327,6 @@ nav a:any-link{
     align-items:center;
     margin-bottom: 40px;
     font-size:1.25rem;
-    padding:1rem;
     animation-name: slide-reviews;
     animation-duration:60s;
     animation-delay:1.5s;
@@ -415,4 +418,103 @@ nav a:any-link{
     font-size: 1.25rem;
     font-weight: lighter;
 }
+
+:is(.menu,.ratings,.features,.contact){
+    scroll-margin-top:3rem;
+}
+
+@media screen and (min-width:576px){
+    .head h1{
+        font-size:3rem;
+    }
+
+    .head p{
+        font-size: 2rem;
+    }
+
+    .fg p#button{
+        font-size: 2.25rem;
+    }
+
+    .features .card{
+        width:350px;
+    }
+
+    .features img{
+        width:150px;
+        height:125px;
+    }
+
+    .features p{
+        font-size: 1.25rem;
+        margin-top: 1rem;
+    }
+
+    .features figcaption{
+        font-size:2rem;
+    }
+
+    .contact .content{
+        margin:2rem;
+    }
+
+    header nav{
+        display:block;
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    header{
+        justify-content: space-between;
+        padding:0.5rem;
+    }
+
+    header h2{
+        padding:1rem;
+    }
+
+    header nav li{
+        padding:0.5rem;
+    }
+
+}
+
+@media screen and (min-width:768px){
+    header h2{
+        font-size:1.5rem
+    }
+
+    header nav{
+        font-size: 1.25rem;
+    }
+
+    .menu-section{
+        column-count: 2;
+    }
+
+    .menu-section-headings{
+        column-span: all;
+    }
+
+    .menu-section-sub-headings{
+        text-align: center;
+    }
+
+    .cbrk{
+        break-before:column;
+    }
+
+    .features .card-collection{
+        flex-flow:row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .features .card{
+        height:350px;
+    }
+
+}
+
+
 

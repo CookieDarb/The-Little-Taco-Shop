@@ -12,13 +12,12 @@
 <body>
     <header>
         <h2>The Little Taco Shop</h2>
-        <div class="menu-button"></div>
         <nav>
             <ul>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Food</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#ratings">Ratings</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -51,7 +50,7 @@
                 </section>
             
                  <section class="menu-section-sub">
-                    <h4 class="menu-section-sub-headings nveg">Non Veg Tacos</h4>
+                    <h4 class="menu-section-sub-headings nveg cbrk">Non Veg Tacos</h4>
                     <section class="menu-section-content">
                         <div><div class="item"><p class="item-name">Soft Chicken Taco</p><p class="item-description">Tender shredded chicken, fresh lettuce, diced tomatoes, and creamy avocado salsa in a warm corn tortilla.</p></div><p class="item-price">₹90.00</p></div>
                         <div><div class="item"><p class="item-name">Crispy Chicken Taco</p><p class="item-description">Crispy fried chicken strips, shredded lettuce, diced tomatoes, and tangy chipotle mayo in a crunchy corn tortilla shell.</p></div><p class="item-price">₹100.00</p></div>
@@ -78,7 +77,7 @@
                         </section>
                     </section>
                     <section class="menu-section-sub bvg">
-                        <h4 class="menu-section-sub-headings bvg">Beverages</h4>
+                        <h4 class="menu-section-sub-headings bvg cbrk">Beverages</h4>
                         <section class="menu-section-content">
                             <div><div class="item"><p class="item-name">Coca Cola</p></div><p class="item-price">₹40.00</p></div>
                             <div><div class="item"><p class="item-name">Pepsi</p></div><p class="item-price">₹40.00</p></div>
@@ -90,27 +89,29 @@
             </section>    
         </section>
         
-        <section class="features">
+        <section class="features" id="features">
             <h2>Our Standouts</h2>
-            <div class="card">
-                <figure><img src="img/features-icon-1.png" alt="icon-1" loading="lazy" height="100" width="100"><figcaption>Hygienic Ingredients</figcaption></figure>
-                <p>We prioritize your well-being by meticulously selecting only the freshest and highest-quality ingredients, ensuring every dish is prepared with cleanliness and safety in mind.</p>
-            </div>
-            <div class="card">
-                <figure><img src="img/features-icon-2.png" alt="icon-2" loading="lazy" height="100" width="100"><figcaption>Premier Dining Environment</figcaption></figure>
-                <p>Experience unparalleled comfort and ambiance in our thoughtfully designed dining space, where every detail is crafted to enhance your dining pleasure.</p>
-            </div>
-            <div class="card">
-                <figure><img src="img/features-icon-3.png" alt="icon-3" loading="lazy" height="100" width="100"><figcaption>Expert Chefs</figcaption></figure>
-                <p>Our kitchen is led by expert chefs who skillfully craft each dish with creativity and precision, ensuring a culinary experience of the highest caliber.</p>
-            </div>
-            <div class="card">
-                <figure><img src="img/features-icon-4.png" alt="icon-4" loading="lazy" height="100" width="100"><figcaption>Party House</figcaption></figure>
-                <p>Our venue transforms into a vibrant celebration hub, perfect for hosting unforgettable parties and events.</p>
+            <div class="card-collection">
+                <div class="card">
+                    <figure><img src="img/features-icon-1.png" alt="icon-1" loading="lazy" height="100" width="100"><figcaption>Hygienic Ingredients</figcaption></figure>
+                    <p>We prioritize your well-being by meticulously selecting only the freshest and highest-quality ingredients, ensuring every dish is prepared with cleanliness and safety in mind.</p>
+                </div>
+                <div class="card">
+                    <figure><img src="img/features-icon-2.png" alt="icon-2" loading="lazy" height="100" width="100"><figcaption>Premier Dining Environment</figcaption></figure>
+                    <p>Experience unparalleled comfort and ambiance in our thoughtfully designed dining space, where every detail is crafted to enhance your dining pleasure.</p>
+                </div>
+                <div class="card">
+                    <figure><img src="img/features-icon-3.png" alt="icon-3" loading="lazy" height="100" width="100"><figcaption>Expert Chefs</figcaption></figure>
+                    <p>Our kitchen is led by expert chefs who skillfully craft each dish with creativity and precision, ensuring a culinary experience of the highest caliber.</p>
+                </div>
+                <div class="card">
+                    <figure><img src="img/features-icon-4.png" alt="icon-4" loading="lazy" height="100" width="100"><figcaption>Party House</figcaption></figure>
+                    <p>Our venue transforms into a vibrant celebration hub, perfect for hosting unforgettable parties and events.</p>
+                </div>
             </div>
         </section>
 
-        <section class="ratings">
+        <section class="ratings" id="ratings">
             <h2>Ratings Overview</h2>
             <div class="card-collection">
                 <div class="card" id="1">
@@ -135,7 +136,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>Contact Us</h2>
             <div class="content">
                 <div>
