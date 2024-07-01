@@ -7,3 +7,7 @@ A responsive website for a fictional taco shop, showcasing HTML and CSS. Built f
 - Animation using CSS @keyframes.
 - Custom design, graphics and layout.
 - Interactive elements (eg : navigations, buttons, etc)
+
+## Preview
+**Link to the site** : https://cookiedarb.github.io/The-Little-Taco-Shop/ 
+(The images might take a little time to load)
