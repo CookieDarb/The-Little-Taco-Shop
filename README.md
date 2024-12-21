@@ -11,3 +11,7 @@ A responsive website for a fictional taco shop, showcasing HTML and CSS. Built f
 ## Preview
 **Link to the site** : https://cookiedarb.github.io/The-Little-Taco-Shop/ 
 (The images might take a little time to load)
+
+## Screenshots
+![image](https://github.com/user-attachments/assets/0692aca0-39a8-4000-8187-1d4954f660a5)
+
