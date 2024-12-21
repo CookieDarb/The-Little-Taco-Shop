@@ -14,4 +14,7 @@ A responsive website for a fictional taco shop, showcasing HTML and CSS. Built f
 
 ## Screenshots
 ![image](https://github.com/user-attachments/assets/0692aca0-39a8-4000-8187-1d4954f660a5)
+![image](https://github.com/user-attachments/assets/a37186df-6aa1-41e1-a45b-8da7a85e3c1a)
+
+
 
